@@ -1,19 +1,19 @@
-
 package pr1;
 
-public class Vehiculo{
-    String marca; 
-    String modelo; 
-    int año; 
-    String propietario; 
-    String placa; 
+public class Vehiculo {
+
+    protected String marca;
+    protected String modelo;
+    protected int año;
+    protected String propietario;
+    protected String placa;
 
     public Vehiculo(String marca, String modelo, int año, String propietario, String placa) {
         this.marca = marca;
         this.modelo = modelo;
         this.año = año;
         this.propietario = propietario;
-        this.placa = placa; 
+        this.placa = placa;
     }
 
     public String getMarca() {
@@ -55,13 +55,11 @@ public class Vehiculo{
     public void setPlaca(String placa) {
         this.placa = placa;
     }
-    
-    public void mostrarInformacion(){
-        System.out.println("La marca del vehiculo es: " +marca);
-        System.out.println("El modelo del vehiculo es: " +modelo);
-        System.out.println("El año de fabricacion vehiculo es: " +año);
-        System.out.println("El propietario del vehiculo es: " +propietario);
+
+    public void mostrarInformacion() {
+        System.out.println("La marca del vehiculo es: " + marca);
+        System.out.println("El modelo del vehiculo es: " + modelo);
+        System.out.println("El anio de fabricacion vehiculo es: " + año);
+        System.out.println("El propietario del vehiculo es: " + propietario);
     }
 }
-
-
